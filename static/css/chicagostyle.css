@@ -1,10 +1,9 @@
-.centered {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow: auto;
-  white-space: nowrap;
+P.blocktext {
+    top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 40em
 }
 .top {
   position: fixed;
@@ -32,36 +31,30 @@ a:hover {
   text-decoration: underline;
 }
 h1 {
-  width: 800px;
-  position: relative;
-  left: -100px;
+
   letter-spacing: -1px;
   line-height: 60px;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 100;
   margin: 0px 0 50px 0;
   text-shadow: 0 1px 0 #fff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h2 {
-  width: 800px;
   position: relative;
-  left: -100px;
   letter-spacing: -1px;
   line-height: 60px;
-  font-size: 60px;
+  font-size: 45px;
   font-weight: 100;
   margin: 0px 0 50px 0;
   text-shadow: 0 1px 0 #fff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h4 {
-  width: 800px;
   position: relative;
-  left: -100px;
   letter-spacing: -1px;
   line-height: 60px;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 100;
   margin: 0px 0 50px 0;
   text-shadow: 0 1px 0 #fff;
