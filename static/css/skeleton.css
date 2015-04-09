@@ -364,7 +364,9 @@ form {
   box-sizing: border-box; }
 .u-max-full-width {
   max-width: 100%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;}
 .u-pull-right {
   float: right; }
 .u-pull-left {
@@ -375,9 +377,9 @@ form {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
   margin-top: 3rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 1.5rem;
   border-width: 0;
-  /*border-top: 1px solid #E1E1E1; } */ /* LOL URGH
+  border-top: 1.5px solid #E1E1E1; }  /* LOL URGH
 
 
 /* Clearing

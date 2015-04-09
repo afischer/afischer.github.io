@@ -1,40 +1,94 @@
 body {
     padding-top: 3rem;
+    background-color: #3b3b3b;
+    color: #ffffff;
 }
 
-nav {
-    width: 100%;
-    box-sizing: border-box;
+/*NAV*/
+nav,
+nav ul,
+nav ul li,
+nav ul ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
-
 nav ul {
-    padding-left: 0;
-    list-style-type: none;
+  position: relative;
+  float: left;
+}
+nav ul li {
+  float: left;
+  min-height: 1px;
+  line-height: 1em;
+  vertical-align: middle;
+}
+nav ul li.hover,
+nav ul li:hover {
+  position: relative;
+  cursor: default;
 }
 
-nav ul a {
-    text-decoration: none;
+nav ul li:hover > ul {
+  visibility: visible;
+}
+nav ul li {
+  float: none;
+}
+nav {
+  font-size: 110%;
+  width: 100%;
+}
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+}
+nav > ul {
+  float: none;
+}
+nav > ul > li {
+  border-left: 3px solid #ffffff;
+}
+nav > ul > li > a {
+  padding: 10px 20px;
+}
+nav > ul > li:hover {
+  border-left: 3px solid #1EAEDB;
+}
+nav ul li:hover > a {
+  color: #1EAEDB;
+}
+nav > ul > li:hover {
+  background: #F6F6F6;
 }
 
-nav li{
-    display:block;
+footer {
+    font-size: 90%;
+    color: #B1B1B1;
 }
 
-/*TODO: LOL SO HACKY FIX THIS*/
-nav li:hover {
-    background-color:black;
-    color: white;
+p {
+    font-family: "europa", sans-serif;
 }
 
+h1, h2, h3, h4 {
+    font-family: "museo-slab",sans-serif;
+}
 
 .fname {
-    font-family: "Hallo Sans";
+    font-family: "museo-slab",sans-serif;
     line-height: 1;
 }
 .lname {
-    font-family: "Hallo Sans";
+    font-family: "museo-slab",sans-serif;
     line-height: 1;
 }
+
 
 
 /* © 2011-2015 Andrew Fischer */

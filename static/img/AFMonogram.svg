@@ -1,18 +1,19 @@
 <svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
- <g>
-  <title>background</title>
-  <rect x="-1" y="-1" width="514" height="514" id="canvas_background" fill="none"/>
- </g>
+    <g>
+        <title>background</title>
+        <rect x="-1" y="-1" width="514" height="514" id="canvas_background" fill="none" />
+    </g>
 
- <g>
-  <title>Layer 1</title>
-  <rect id="Border" height="512" width="512" y="0" x="0" stroke-width="3" fill="#000000"/>
-  <g id="Letters">
-   <polygon fill="#ffffff" stroke-width="3" stroke-miterlimit="10" points="352.4938201904297,285.9591369628906 435.1912078857422,285.9559020996094 435.1912078857422,226.0391845703125 325.53211975097656,226.04083251953125 " id="F-Bot"/>
-   <g stroke-opacity="0" id="svg_2">
-    <path fill="#ffffff" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" d="m184.70599,208.92316l-80.88673,179.31891l-8.13094,17.54718l-65.47885,0l18.8307,-42.36957l108.27465,-239.66018l8.13094,-17.5471l38.51715,0l8.13106,17.5471l107.84352,239.66018l18.83069,42.36957l-65.47397,0l-88.58818,-196.86606m12.32825,8.14075" id="A-Let"/>
-   </g>
-   <polygon fill="#ffffff" stroke-width="3" stroke-miterlimit="10" points="298.95274353027344,166.1290283203125 481.79051208496094,166.1290283203125 481.79051208496094,106.21234130859375 271.9910430908203,106.21075439453125 " id="F-Top"/>
-  </g>
- </g>
+    <g>
+        <title>Layer 1</title>
+        <rect id="Border" height="512" width="512" y="0" x="0" stroke-width="3" fill="#000000" />
+        <g id="Letters">
+            <polygon fill="#ffffff" stroke-width="3" stroke-miterlimit="10" points="352.4938201904297,285.9591369628906 435.1912078857422,285.9559020996094 435.1912078857422,226.0391845703125 325.53211975097656,226.04083251953125 " id="F-Bot" />
+            <g stroke-opacity="0" id="svg_2">
+                <path fill="#ffffff" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" d="m184.70599,208.92316l-80.88673,179.31891l-8.13094,17.54718l-65.47885,0l18.8307,-42.36957l108.27465,-239.66018l8.13094,-17.5471l38.51715,0l8.13106,17.5471l107.84352,239.66018l18.83069,42.36957l-65.47397,0l-88.58818,-196.86606m12.32825,8.14075"
+                id="A-Let" />
+            </g>
+            <polygon fill="#ffffff" stroke-width="3" stroke-miterlimit="10" points="298.95274353027344,166.1290283203125 481.79051208496094,166.1290283203125 481.79051208496094,106.21234130859375 271.9910430908203,106.21075439453125 " id="F-Top" />
+        </g>
+    </g>
 </svg>
