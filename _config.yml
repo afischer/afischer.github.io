@@ -4,9 +4,9 @@ email: afischer15@mac.com
 description: > # this means to ignore newlines until "baseurl:"
   The personal website of Andrew Fischer.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:5000" # the base hostname & protocol for your site
+url: "http://localhost:4000" # the base hostname & protocol for your site
 twitter_username: afischer15
-github_username:  aficsher
+github_username:  afischer
 
 # Build settings
 markdown: kramdown

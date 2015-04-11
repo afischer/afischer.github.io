@@ -5,6 +5,10 @@ body {
     padding-top: 3rem;
     background-color: #3b3b3b;
     color: #ffffff;
+    font-family: "raleway", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
 }
 
 /*NAV*/
@@ -80,7 +84,12 @@ footer {
     color: #B1B1B1;
 }
 
-p {
+a {
+  text-decoration: none;
+}
+
+.fa {
+  color: inherit;
 }
 
 h1, h2, h3, h4 {
@@ -96,6 +105,46 @@ h1, h2, h3, h4 {
     line-height: 1;
 }
 
+.social-media a a:link{
+  color: #ffffff;
+}
+
+
+/*BLOG*/
+.post-list > ul {
+  list-style: none;
+}
+
+.post-list > ul li {
+  padding: .5rem 0;
+}
+
+.post-list > ul .post-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 115%;
+}
+
+
+.post-list a:hover {
+  color: #1EAEDB;
+}
+
+
+.post-header .post-title  {
+  display: inline-block;
+  white-space:nowrap;
+
+}
+
+.post-list > ul li .post-date,
+.post-header .post-date {
+  float: right;
+  color: #B1B1B1;
+  font-size: 80%;
+  font-weight: 300;
+  padding: 3px;
+}
 
 
 /* © 2011-2015 Andrew Fischer */

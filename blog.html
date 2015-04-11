@@ -3,18 +3,25 @@ layout: default
 title: Blog
 ---
 
+<center>
+  <h3>Blog</h3>
+<hr>
+Here is where I will keep my random ramblings. I'll probably talk about open source, school, programming, and complain about things. I will probably spell many things wrong. I will probably not post as much as I would like to.
+<hr>
+</center>
 
-<h3 class="page-heading">Posts</h3>
+<div class="post-list">
+  <ul>
+    {% for post in site.posts %}
 
-<ul class="post-list">
-  {% for post in site.posts %}
-  <li>
-    <h4>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h4>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-  </li>
-  {% endfor %}
-</ul>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          <li>
+            {{ post.title }}
+            <span class="post-date">{{ post.date | date: "%Y.%m.%-d " }}</span>
+          </li>
+        </a>
+        
+    {% endfor %}
+  </ul>
 
 <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

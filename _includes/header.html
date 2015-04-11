@@ -1,27 +1,105 @@
-<header class="site-header">
+<!DOCTYPE HTML>
+<html>
 
-  <div class="wrapper">
+<head>
+    <meta charset="utf-8">
+    <title>{{ site.name }}</title>
+    <meta name="description" content="">
+    <meta name="author" content="Andrew Fischer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <link rel="stylesheet" href="{{" /css/normalize.css " | prepend: site.baseurl}}">
+    <link rel="stylesheet" href="{{" /css/skeleton.css " | prepend: site.baseurl}}">
+    <link rel="stylesheet" href="{{" /css/style.css " | prepend: site.baseurl}}">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="{{" /img/favicon.png " | prepend: site.baseurl}}">
 
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
+</head>
 
-      <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </nav>
+<body>
+    <!-- Image -->
+    <div class="container">
+        <div class="row">
+            <div class="three columns">
+                <img src="{{" /img/AFMonogramOL.svg " | prepend: site.baseurl}}" class="u-full-width" alt="Andrew Fischer Monogram" />
+            </div>
+            <div class="nine columns" style="width: 100%;">
+            </div>
+        </div>
+    </div>
 
-  </div>
+    <div class="container">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="three columns">
+                <div class="fname">ANDREW</div>
+                <div class="lname">FISCHER</div>
+                <hr style="margin-top: 0.4em; margin-bottom: 1em; height:25px; border: 3px solid white; ">
+                <!-- TODO: refactor -->
+                <nav>
+                    <ul>
+                        <li {% if page.title=='Home' %}class="active" {% endif %}>
+                            <a href='/'>
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li {% if page.title=='CV' %}class="active" {% endif %}>
+                            <a href='#'>
+                                <span>Curriculum Vit&aelig;</span>
+                            </a>
+                        </li>
+                        <li {% if page.title=='Blog' %}class="active" {% endif %}>
+                            <a href='/blog.html'>
+                                <span>Blog</span>
+                            </a>
+                        </li>
+                        <li {% if page.title=='Contact' %}class="active" {% endif %}>
+                            <a href='/contact.html'>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
 
-</header>
+                    <br>
+
+                    <ul>
+                        <li {% if page.title=='Projects' %}class="active" {% endif %}>
+                            <a href='/projects.html'>
+                                <span>Projects</span>
+                            </a>
+                        </li>
+                        <li {% if page.title=='CV' %}class="active" {% endif %}>
+                            <a href='/hire.html'>
+                                <span>Hire Me!</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <span class="social-media">
+                    <a href="https://www.linkedin.com/profile/view?id=183941105" class="fa fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-linkedin fa-stack-1x" style="color: #3b3b3b;"></i>
+                    </a>
+
+                    <a href="http://www.twitter.com/afischer15" class="fa fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-stack-1x" style="color: #3b3b3b;"></i>
+                    </a>
+
+                    <a href="http://www.github.com/afischer" class="fa fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-github-alt fa-stack-1x" style="color: #3b3b3b;"></i>
+                    </a>
+
+                    <a href="mailto:afischer15@mac.com" class="fa fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-envelope fa-stack-1x" style="color: #3b3b3b;"></i>
+                    </a>
+                </span>
+
+
+            </div>
+
+            <!-- Content -->
+            <div class="nine columns" style="text-align: justify">
