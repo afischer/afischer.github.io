@@ -1,0 +1,52 @@
+body {
+  font-family: "museo", serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.row:not(:first-child) {
+    padding-top: 25px;
+}
+
+.content-label {
+  padding: 0;
+  text-align: right;
+}
+
+.content-label span {
+  font-weight: 500;
+  border-bottom: 1px solid #000;
+}
+
+.content {
+  padding-left: 20px;
+  padding-right: 25px;
+  text-align: justify;
+  word-wrap: break-word;
+  -webkit-word-wrap: break-word;
+  -ms-word-wrap: break-word;
+  -ms-word-break: break-all;
+     word-break: break-all;
+     word-break: break-word;
+     
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+
+}
+
+.content ul {
+  list-style-type: none;
+}
+
+.work {
+  padding-bottom: 10px;
+  line-height: 1;
+}
+
+.time {
+  font-size: 80%;
+  font-weight: 100;
+  font-style: italic;
+  color; #777;
+}
