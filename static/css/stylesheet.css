@@ -9,6 +9,17 @@ body {
   font-weight: 300;
 }
 
+a, a:visited {
+  transition: all 350ms ease; 
+  color: #FF6C49;
+}
+
+a:hover {
+  transition: all 350ms ease; 
+  text-decoration: none;
+  color: #777;
+}
+
 .row:not(:first-child) {
     padding-top: 25px;
 }
