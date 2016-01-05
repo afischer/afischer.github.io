@@ -51,6 +51,7 @@ a:hover {
 
 .content ul {
   list-style-type: none;
+  padding: 0;
 }
 
 .work, .project {
@@ -67,4 +68,15 @@ a:hover {
 
 .download-link {
   padding-top: 10px;
+}
+
+@media (max-width: 750px) {
+  .content {
+    padding-left: 25px;
+  }
+  
+  .content-label {
+    margin-right: -8px;
+    margin-left: 8px
+  }
 }
