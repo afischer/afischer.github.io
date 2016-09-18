@@ -1,5 +1,5 @@
 header {
-  padding-bottom: 50px;
+  padding-bottom: 0;
   padding-top: 15px;
 }
 
@@ -9,6 +9,29 @@ body {
   font-weight: 300;
 }
 
+h2:first-of-type {
+  color: #555;
+  text-decoration: none;
+  font-size: 60px;
+  line-height: 1;
+  text-shadow: #EDEDED 1px 1px 0;
+  position: relative;
+}
+h2:first-of-type:after {
+  content:"Andrew Fischer";
+  position: absolute;
+  left: 3px;
+  top: 3px;
+}
+h2:first-of-type:after {
+background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #aaa 25%, #aaa 50%, transparent 50%, transparent 75%, #aaa 75%);
+  background-size: 4px 4px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: -5;
+  display: block;
+  text-shadow: none;
+}
 a, a:visited {
   transition: all 350ms ease; 
   color: #FF6C49;
@@ -20,6 +43,9 @@ a:hover {
   color: #777;
 }
 
+.container:last-child {
+  padding-bottom: 50px;
+}
 .row:not(:first-child) {
     padding-top: 25px;
 }
