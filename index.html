@@ -6,12 +6,54 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pills/1.0.1/pills.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Exo:400i,400|Vollkorn:400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Exo:300,700&amp;subset=latin-ext" rel="stylesheet">
 
   <title>Andrew Fischer</title>
 
-  <link rel="stylesheet" href="static/css/stylesheet.css">
+  <style media="screen">
+    body {
+      font-family: 'Exo', sans-serif;
+      font-variant-ligatures: common-ligatures;
+      text-rendering: optimizeLegibility;
+      font-weight: 300;
+      background-color: #282828;
+      color: #F8F8F0;
+      margin: 0 15px;
+      padding: 0;
+    }
+
+    main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      line-height: 1.45;
+    }
+
+    a, a:hover, a:visited {
+      text-decoration: none;
+      color: #66D9EF;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    main .infobox {
+      max-width: 400px;
+    }
+
+    @media screen and (max-width: 450px) {
+      ul { list-style-position: inside; }
+    }
+  </style>
+
   <script>
     (function(i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
@@ -27,161 +69,28 @@
     ga('create', 'UA-6208376-5', 'auto');
     ga('send', 'pageview');
   </script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pills/1.0.1/pills.min.css" />
 </head>
 
 <body>
-
-  <header>
-    <div class="row">
-      <hr>
-      <div class="column six right">
-        <h1>
-          Andrew<br>
-          <span>Fischer</span>
-        </h1>
-        <!-- <nav>
-          <a href="#">Resume</a>
-          <a href="#">Projects</a>
-          <a href="#"><i class="icon-github"></i></a>
-          <a href="#"><i class="icon-twitter"></i></a>
-          <a href="#"><i class="icon-linkedin"></i></a>
-        </nav> -->
-      </div>
-      <div class="column four">
-        <p>
-          Hey! I'm Andrew Fischer, a
-          <script type="text/javascript">
-            document.write(~~((Date.now() - +new Date("1996-08-19")) / (31557600000)));
-          </script>
-          -year-old student and developer. I'm currently attending the
-          University of Pennsylvania, pursuing a degree in computational biology.
-          Currently, I'm making and breaking things at <i>The Daily Pennsylvanian</i>,
-          Penn's student-run newspaper. As Director of Web Development, I've been
-          working with an extremely talented group of students to create a quality
-          digital news experience.
-        </p>
-      </div>
-      <hr>
-    </div>
-  </header>
-
   <main>
-    <section id="resume" class="row">
-      <div class="column five right">
-        <h2>Work Experience</h2>
-        <!-- <a href="#">Download Resume <i class="icon-paperclip"></i></a> -->
-
-      </div>
-      <div class="column seven">
-        <div class="job">
-          <a href="http://www.thedp.com/">The Daily Pennsylvanian</a><br>
-          <em>Director of Web Development</em>
-          <small>Spring 2015&mdash;Present</small>
-          <p>
-            Building a web department at of United States’ largest student-run newspapers.
-          </p>
-          <ul>
-            <li>
-              Responsible for designing and implementing engaging webpages for special projects
-            </li>
-            <li>
-              Manage staff of 10 students
-            </li>
-            <li>
-              Launched redesign of theDP.com and 34st.com, reducing load times and increasing
-              readability. Used PHP’s Twig templating engine.
-            </li>
-            <li>
-              Elected to Board of Directors as an at-large member. Participate
-              in high-level company discussion and planning as the company moves to a web-first mindset.
-            </li>
-            <li>
-              Responsible for long-term decisions regarding the future of the DP’s web presence
-            </li>
-          </ul>
-        </div>
-
-        <div class="job">
-          <a href="https://www.motivateco.com">Motivate International</a><br>
-          <i>Engineering Intern</i><br>
-          <small>Summer 2016, Summer 2017</small>
-          <p>
-            Worked as full-stack engineering intern, returning for a second summer.
-          </p>
-          <ul>
-            <li>
-              Implemented API layer in <em>Scala</em> and the <em>Play Framework</em>
-              using functional programming principles. Currently in use by eight bike share
-              systems and receives 200+ requests per minute
-            </li>
-            <li>
-              Worked with and contributed to server-less APIs using <em>AWS Lambda</em>
-              and <em>SQS</em>
-            </li>
-            <li>
-              Created <em>PHP</em>-backed dashboards for dispatchers to view real-time system data
-            </li>
-            <li>
-              Worked with standards body for the General Bike Share Feed Specification (GBFS)
-            </li>
-            <li>
-              Additional work with <em>Ruby</em> (Rails, Sinatra) and <em>Python</em> (Flask)
-            </li>
-          </ul>
-        </div>
-
-        <div class="job">
-          <a href="http://sumall.com">SumAll</a><br>
-          <i>Engineering Intern</i><br>
-          <small>Summer 2015</small>
-          <p>
-            Worked at a venture-backed startup helping to maintain legacy codebase and transition to a new codebase.
-          </p>
-          <ul>
-            <li>
-              Created both <em>NodeJS</em> front-ends and <em>Java</em> APIs to
-              implement checkout flows for new products, using user feedback to improve designs.
-            </li>
-            <li>
-              Created front-end components for SumAll’s new <em>VueJS</em>-based web application
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="resume" class="row">
-      <div class="column five right">
-        <h2>Education</h2>
-      </div>
-      <div class="column seven">
-        <div class="school">
-          <a href="http://www.upenn.edu/">University of Pennsylvania</a><br>
-          Bachelor of Arts, <em>Computational Biology</em><br>
-          <small>Fall 2015&mdash;Present</small>
-          <p>
-            Biology major with strong focus on computer science, data-analysis, modeling, and systems.
-          </p>
-          <p>
-            Major coursework includes Mathematical Foundations of Computer Science; Automata, Computability and Complexity; Molecular Biology and Genetics; and Advanced Evolution.
-          </p>
-        </div>
-
-        <div class="school">
-          <a href="http://stuy.enschool.org/">Stuyvesant High School</a><br>
-          <small>Class of 2015</small>
-          <p>
-            Received highest honors in Computer Science.
-          </p>
-        </div>
-      </div>
-    </section>
+    <div class="infobox">
+      <h1>Andrew Fischer</h1>
+      <p>Hi there! I'm a
+        <script type="text/javascript">
+          document.write(~~((Date.now() - +new Date("1996-08-19")) / (31557600000)));
+        </script>-year-old student and developer currently attending the
+        University of Pennsylvania.
+      </p>
+      <ul>
+        <li><a href="http://linkedin.com/in/afischer15">LinkedIn</a></li>
+        <li><a href="http://twitter.com/afischer15">Twitter</a></li>
+        <li><a href="http://github.com/afischer">Github</a></li>
+        <li><a href="https://github.com/afischer/afischer.github.io/raw/master/static/files/afischerCV.pdf">
+          Resume
+        </a></li>
+      </ul>
+    </div>
   </main>
-
-  <footer>
-
-  </footer>
 </body>
 
 </html>
